@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=deviced-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">
+            <img class="logo" src="imagenes/logo.png" alt="petmap logo" />
+          </a>
+          <a class="navbar-brand" href="#">PetMap</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">¿Quienes somos?</a></li>
+            <li><a class="active" href="faqs.html">FAQs</a></li>
+            <li><a href="#perdidos">Perdidos</a></li>
+            <li><a href="#encontrados">Encontrados</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="registro.html">Registrate</a></li>
+          </ul>
+
+          <!-- Formulario para LG -->
+          <form class="form-inline visible-lg">
+          <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail3">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" size="6">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputPassword3">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword3" placeholder="******" size="6">
+    </div>
+    <div class="checkbox hi">
+      <label>
+        <input type="checkbox">
+      </label>
+    </div>
+    <button type="submit" class="btn nav-boton">Iniciar Sesión</button>
+  </form>
+
+
+        </div><!--/.nav-collapse -->
+
+        <!-- FORMULARIO PARA TAMAÑO MENOR A LG -->
+        <form class="form-inline hidden-lg col-xs-10 col-xs-offset-1">
+        <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+        </div>
+        <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword3">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="******">
+        </div>
+        <div class="checkbox hi">
+        <label>
+        <input type="checkbox"> Recuerdame
+        </label>
+        </div>
+        <button type="submit" class="btn nav-boton">Iniciar Sesión</button>
+        </form>
+      </div>
+    </nav>
+    <div class="row">
+      <div style="height: 200px,">
+        <p>
+          <br><br><br><br>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-xs-12 col-md-10 col-md-offset-1 fondo">
+        <div class="contenido">
+
+
+          <h1>FAQs</h1>
+          <p id="demo" onclick="myFunction()">
+          P: ¿Como registrarse?
+          </p>
+
+          <p onclick="miFuncion()">
+          P: ¿Como encuentro mi perro?
+          </p>
+          <p onclick="miFuncionper()">
+            P: ¿Como reporto un perro perdido?
+          </p>
+
+
+    <script>
+    function myFunction() {
+    var x = document.createElement("P");
+    var t = document.createTextNode("Es simple. Hace click en Registrate y segui los pasos.");
+    x.appendChild(t);
+    document.body.appendChild(x);
+    }
+
+    function miFuncion(){
+      var x = document.createElement("P");
+      var t = document.createTextNode("Luego de registrarte, vas a la pagina principal y vas a ver un mapa con los perros que estan perdidos en tu zona. Siempre que permitas que la aplicacion PetMap acceda a tu ubicación. Tambien es posible acceder desde Encontrados.");
+      x.appendChild(t);
+      document.body.appendChild(x);
+    }
+
+    function miFuncionper(){
+      var x = document.createElement("P");
+      var t = document.createTextNode("Tenes que clickear en perdidos y seguir el procedimiento. Tendras que especificar: raza, sexo, color, tamaño, entre otras caracteristicas. Gracias por ayudar!");
+      x.appendChild(t);
+      document.body.appendChild(x);
+    }
+
+    </script>
+
+      </div>
+    </div>
+
+    </div>
+  </body>
+
+</html>
